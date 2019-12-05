@@ -13,8 +13,7 @@
                                 <!-- csrf_token is required to validate the form -->
                                 {{ form.csrf_token }}
                                 {{ form.task_desc(class_='form-control todo-list-input', placeholder='Task to Complete?')}}
-                                {{ form.task_start(class_='form-control todo-list-input', placeholder='Start Date? (Y-M-D)')}}
-                                {{ form.task_end(class_='form-control todo-list-input', placeholder='End Date? (Y-M-D)')}}
+                                <input type="date", name="date", class="form-control todo-list-input">
                                 {{ form.task_location(class_='form-control todo-list-input', placeholder='Location?')}}
                                 {{ form.task_customer(class_='form-control todo-list-input', placeholder='Client?')}}
                                 {{ form.task_status_completed }}
